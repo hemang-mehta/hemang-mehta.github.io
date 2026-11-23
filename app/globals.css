@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+[data-theme="light"] {
+  --page: #e4e4e7;
+  --card: #ffffff;
+  --card-border: transparent;
+  --ink: #18181b;
+  --ink-soft: #27272a;
+  --ink-body: #3f3f46;
+  --ink-muted: #52525b;
+  --chip: #f4f4f5;
+  --rule: #f4f4f5;
+  --feature: #18181b;
+  --feature-ink: #ffffff;
+  --feature-body: #d4d4d8;
+  --feature-muted: #a1a1aa;
+  --accent: #c2410c;
+  --on-accent: #ffffff;
+  --invert: #18181b;
+  --invert-ink: #ffffff;
+  --light: #ffffff;
+  --light-ink: #18181b;
+}
+
+[data-theme="dark"] {
+  --page: #0d1117;
+  --card: #161b22;
+  --card-border: #30363d;
+  --ink: #f0f6fc;
+  --ink-soft: #e6edf3;
+  --ink-body: #c9d1d9;
+  --ink-muted: #9da7b3;
+  --chip: #21262d;
+  --rule: #30363d;
+  --feature: #21262d;
+  --feature-ink: #ffffff;
+  --feature-body: #c9d1d9;
+  --feature-muted: #9da7b3;
+  --accent: #3fb950;
+  --on-accent: #0d1117;
+  --invert: #0d1117;
+  --invert-ink: #f0f6fc;
+  --light: #f0f6fc;
+  --light-ink: #0d1117;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: normal;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
